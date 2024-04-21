@@ -12,12 +12,12 @@
 			Seasons
 		</h1>
 		<p class="text-xl">
-			Despite being an agricultural country, there is a <strong>lack</strong> of research regarding
-			price changes for agricultural products. In recent years, prices of goods have been
-			<strong>continuously rising</strong>, warranting an investigation behind the possible factors
-			that affect it. Hence, we used data science to gain insight into the trends and patterns of
-			agricultural prices and subsequently learn the significant factors that affect prices of
-			agricultural goods.
+			To combat the rise of prices in rice, among other commodities, the Philippine Government
+			issued the Rice Tariffication Law in 2019, which eases import restrictions of rice. Despite
+			this, the Filipino people have not experienced relief from rising prices of goods. Thus, there
+			have been movements in the government to review this law. However, a review of related
+			literature suggests that existing studies that analyze price movement of agricultural
+			commodities are lacking in either coverage or recency.
 		</p>
 	</div>
 </div>

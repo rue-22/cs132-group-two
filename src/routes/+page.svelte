@@ -4,6 +4,7 @@
 	import Data from '$lib/Data.svelte';
 	import Team from '$lib/Team.svelte';
 	import Overview from '$lib/Overview.svelte';
+	import References from '$lib/References.svelte';
 </script>
 
 <Navbar />
@@ -19,4 +20,6 @@
 		desc={['Description 1', 'Description 2', 'Description 3']}
 		img={['img1', 'img2', 'img3']}
 	/>
+
+	<References />
 </div>

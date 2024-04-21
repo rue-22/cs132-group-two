@@ -14,7 +14,7 @@
 	</div>
 
 	<div>
-		<h1 class="text-xl">The Dataset</h1>
+		<h1 class="text-xl mb-2">The Dataset</h1>
 		<div class="flex gap-2">
 			<Card>
 				<h1 slot="title">Source</h1>
