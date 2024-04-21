@@ -12,7 +12,7 @@ const config = {
 			pages: 'build'
 		}),
 		paths: {
-			base: 'cs132-group-two.github.io'
+			base: process.argv.includes('dev') ? '' : 'cs-132-group-two'
 		}
 	},
 	preprocess: vitePreprocess()
