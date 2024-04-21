@@ -15,9 +15,7 @@ const config = {
 				default: true
 			}
 		}),
-		paths: {
-			base: process.argv.includes('dev') ? '' : '/cs132-group-two'
-		}
+		paths: {}
 	},
 	preprocess: vitePreprocess()
 };
