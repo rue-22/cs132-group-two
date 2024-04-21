@@ -4,11 +4,23 @@ This is the GitHub repository for CS 132 project. Made by [Judelle Gaza](https:/
 
 ### Running the Website
 
-Please run the following command in order to run the website in your machine using local host.
+Please run the following commands in order to run the website.
+
+First, please run
+
+```
+npm install
+```
+
+in order to install the required dependencies.
+
+After this, please run
 
 ```
 npm run dev
 ```
+
+to launch the website in your machine using local host.
 
 ## Description
 
