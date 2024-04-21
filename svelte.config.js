@@ -8,8 +8,16 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
-			fallback: '404.html'
-		})
+			fallback: '404.html',
+			assets: 'build',
+			pages: 'build',
+			prerender: {
+				default: true
+			}
+		}),
+		paths: {
+			base: '/cs132-group-two'
+		}
 	},
 	preprocess: vitePreprocess()
 };
