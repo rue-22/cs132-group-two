@@ -10,10 +10,16 @@ const config = {
 		adapter: adapter({
 			appDir: 'app',
 			pages: 'build',
+			fallback: '404.html',
+			precompress: 'false',
+			strict: 'true',
 			prerender: {
 				default: true
 			}
-		})
+		}),
+		paths: {
+			base: ''
+		}
 	},
 	preprocess: vitePreprocess()
 };
