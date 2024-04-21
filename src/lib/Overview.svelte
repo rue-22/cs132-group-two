@@ -4,14 +4,21 @@
 
 <div class="border-b-2 border-t-2 border-black flex flex-col justify-center p-4 gap-4 items-center">
 	<Card>
-		<h1 slot="title">Background Research</h1>
+		<h1 slot="title">Problem</h1>
 		<p slot="desc1">
-			To combat the rise of prices in rice, among other commodities, the Philippine Government
-			issued the Rice Tariffication Law in 2019, which eases import restrictions of rice. Despite
-			this, the Filipino people have not experienced relief from rising prices of goods. Thus, there
-			have been movements in the government to review this law. However, a review of related
-			literature suggests that analysis into the price movement of agricultural commodities are
-			lacking in either coverage or recency.
+			Despite being an agricultural country, there is a <strong>lack</strong> of research regarding
+			price changes for agricultural products. In recent years, prices of goods have been
+			<strong>continuously rising</strong>, warranting an investigation behind the possible factors
+			that affect it.
+		</p>
+	</Card>
+
+	<Card>
+		<h1 slot="title">Solution</h1>
+		<p slot="desc1">
+			Hence, we used data science to gain insight into the trends and patterns of agricultural
+			prices and subsequently learn the significant factors that affect prices of agricultural
+			goods.
 		</p>
 	</Card>
 
@@ -45,8 +52,8 @@
 	<Card>
 		<h1 slot="title">Action Plan</h1>
 		<p slot="desc1">
-			We applied statistical tests such as SARIMA to analyze seasonal price trends and correlations
-			between the prices of different products.
+			We applied statistical tests such as <strong>SARIMA</strong> to analyze seasonal price trends and
+			correlations between the prices of different products.
 		</p>
 	</Card>
 </div>
