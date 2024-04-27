@@ -1,8 +1,13 @@
 <script>
+	export let id;
 	import Card from '$lib/Card.svelte';
 </script>
 
-<div class="border-b-2 border-t-2 border-black flex flex-col justify-center p-4 gap-4 items-center">
+<div
+	class="border-b-2 border-t-2 border-black flex flex-col justify-center p-4 gap-4 items-center"
+	{id}
+>
+	<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Overview</h1>
 	<Card>
 		<h1 slot="title">Problem</h1>
 		<p slot="desc1">
@@ -57,3 +62,9 @@
 		</p>
 	</Card>
 </div>
+
+<style>
+	div {
+		@apply md:scroll-mt-14 scroll-mt-24;
+	}
+</style>

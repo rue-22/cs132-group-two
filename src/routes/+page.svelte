@@ -7,18 +7,20 @@
 	import References from '$lib/References.svelte';
 </script>
 
-<Navbar />
-<div class="flex flex-col">
+<div class="flex flex-col mt-20">
+	<Navbar on:scrollIntoView />
 	<Intro />
 
-	<Overview />
+	<Overview on:scrollIntoView id="overview" />
 
-	<Data />
+	<Data on:scrollIntoView id="data" />
 
 	<Team
+		on:scrollIntoView
+		id="team"
 		names={['Gaza, Judelle', 'Roy, RE', 'Salces, CJ']}
 		desc={['Description 1', 'Description 2', 'Description 3']}
-		img={['img1', 'img2', 'img3']}
+		images={['placeholder.png', 'placeholder.png', 'placeholder.png']}
 	/>
 
 	<References />
