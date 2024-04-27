@@ -1,8 +1,9 @@
 <script>
+	export let id;
 	import Card from '$lib/Card.svelte';
 </script>
 
-<div class="border-black border-b-2 p-4 text-center flex flex-col gap-2">
+<div class="border-black border-b-2 p-4 text-center flex flex-col gap-2" {id}>
 	<div>
 		<p class="mb-2 text-xl">Access our raw data spreadsheet by clicking the button below!</p>
 		<a
@@ -41,3 +42,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	div {
+		scroll-margin-top: 55px;
+	}
+</style>
