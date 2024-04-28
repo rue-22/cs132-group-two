@@ -8,7 +8,9 @@
 		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy": "npx gh-pages -d dist"
+		"deploy": "npx gh-pages -d dist",
+		"fmt": "prettier --check",
+		"fmt:fix": "prettier --write"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -22,8 +24,9 @@
 		"eslint-plugin-svelte": "^2.35.1",
 		"gh-pages": "^6.1.1",
 		"postcss": "^8.4.38",
-		"prettier": "^3.1.1",
+		"prettier": "^3.2.5",
 		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.14",
 		"svelte": "^4.2.7",
 		"tailwindcss": "^3.4.3",
 		"vite": "^5.0.3"
