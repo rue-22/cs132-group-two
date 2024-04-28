@@ -5,14 +5,18 @@
 	export let images;
 </script>
 
-<div class="border-b-2 border-black p-2" {id}>
-	<h1 class="text-center text-2xl md:text-3xl font-bold mb-8">Meet the Team!</h1>
-	<div class="flex flex-col md:flex-row text-center justify-evenly items-center gap-4 py-2">
+<div class="border-b-2 border-black py-2" {id}>
+	<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Meet the Team!</h1>
+	<div class="flex flex-col md:flex-row text-center justify-around items-center gap-8">
 		{#each names as _, i}
-			<div class="">
-				<img src={images[i]} alt="Team member" class="rounded-full w-1/3 md:w-1/2 m-auto" />
-				<h1 class="text-lg md:text-xl font-semibold mt-2 md:mt-4">{names[i]}</h1>
-				<p class="text-sm md:text-base">{desc[i]}</p>
+			<div class="flex items-center gap-4">
+				<img class="w-36 h-36 rounded-full" src={images[i]} alt="" />
+				<div class="font-medium text-black">
+					<div>{names[i]}</div>
+					<div class="text-sm text-gray-500 dark:text-gray-400">
+						{desc[i]}
+					</div>
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -20,6 +24,6 @@
 
 <style>
 	div {
-		scroll-margin-top: 55px;
+		scroll-margin-top: 65px;
 	}
 </style>

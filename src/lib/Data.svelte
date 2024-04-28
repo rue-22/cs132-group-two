@@ -29,14 +29,15 @@
 			<Card>
 				<h1 slot="title">Timespan</h1>
 				<p slot="desc1">
-					Dataset for retail prices are from <strong>January 2020 to December 2023</strong>.
+					Dataset for retail prices are from <strong>January 2020 to December 2023</strong
+					>.
 				</p>
 			</Card>
 			<Card>
 				<h1 slot="title">Count</h1>
 				<p slot="desc1">
-					In total, we have 201 products with their retail prices over 52 months, giving the dataset
-					a total count of <strong>10,452</strong> items.
+					In total, we have 201 products with their retail prices over 52 months, giving
+					the dataset a total count of <strong>10,452</strong> items.
 				</p>
 			</Card>
 		</div>
@@ -45,6 +46,6 @@
 
 <style>
 	div {
-		scroll-margin-top: 55px;
+		scroll-margin-top: 65px;
 	}
 </style>

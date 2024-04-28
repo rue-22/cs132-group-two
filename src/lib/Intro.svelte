@@ -1,29 +1,50 @@
-<script>
-	import Card from '$lib/Card.svelte';
-</script>
-
-<div class="flex flex-col md:flex-row border-black p-4 justify-center items-center mx-auto gap-4">
-	<div class="text-3xl text-center w-fit flex items-center flex-col">
-		<img src="/ricefields.jpg" alt="" class="rounded-se-2xl w-11/12" />
-	</div>
-	<div>
-		<h1 class="text-3xl font-bold mb-4">
-			Rising Rice Prices? A Longitudinal Study into the Interplay of Agricultural Goods Prices and
-			Seasons
+<section class="bg-center bg-no-repeat bg-[url('hero.png')] bg-gray-700 bg-blend-multiply">
+	<div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+		<h1
+			class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+		>
+			Rising Rice Prices?
 		</h1>
-		<p class="text-xl">
-			To combat the rise of prices in rice, among other commodities, the Philippine Government
-			issued the Rice Tariffication Law in 2019, which eases import restrictions of rice. Despite
-			this, the Filipino people have not experienced relief from rising prices of goods. Thus, there
-			have been movements in the government to review this law. However, a review of related
-			literature suggests that existing studies that analyze price movement of agricultural
-			commodities are lacking in either coverage or recency.
+		<h2
+			class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl"
+		>
+			A Longitudinal Study into the Interplay of Agricultural Goods
+		</h2>
+		<p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+			Despite the promises and reforms of the government aimed to lower costs of goods, the
+			Filipino people still have not experienced relief from the continuous price hikes of
+			goods. Thus, there have been movements in the government to review this law. However, a
+			review of related literature suggests that existing studies that analyze price movement
+			of agricultural commodities are lacking in either coverage or recency.
 		</p>
+		<div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+			<a
+				href="#overview"
+				class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+			>
+				Let's start!
+				<svg
+					class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 14 10"
+				>
+					<path
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M1 5h12m0 0L9 1m4 4L9 9"
+					/>
+				</svg>
+			</a>
+		</div>
 	</div>
-</div>
+</section>
 
 <style>
 	div {
-		scroll-margin-top: 55px;
+		scroll-margin-top: 100px;
 	}
 </style>

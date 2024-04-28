@@ -1,14 +1,14 @@
 <script>
 	import Intro from '$lib/Intro.svelte';
-	import Navbar from '$lib/Navbar.svelte';
+	import Header from '$lib/Header.svelte';
 	import Data from '$lib/Data.svelte';
 	import Team from '$lib/Team.svelte';
 	import Overview from '$lib/Overview.svelte';
 	import References from '$lib/References.svelte';
 </script>
 
-<div class="flex flex-col mt-20">
-	<Navbar on:scrollIntoView />
+<div class="flex flex-col mt-12">
+	<Header on:scrollIntoView />
 	<Intro />
 
 	<Overview on:scrollIntoView id="overview" />
