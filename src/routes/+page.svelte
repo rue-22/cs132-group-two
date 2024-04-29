@@ -5,6 +5,7 @@
 	import Team from '$lib/Team.svelte';
 	import Overview from '$lib/Overview.svelte';
 	import References from '$lib/References.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <div class="flex flex-col mt-12">
@@ -24,4 +25,5 @@
 	/>
 
 	<References />
+	<Footer />
 </div>
