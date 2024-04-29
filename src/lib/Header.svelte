@@ -8,7 +8,6 @@
 
 	onMount(() => {
 		width = window.innerWidth;
-		console.log(width);
 		if (width > 768) isFullScreen = true;
 		else isFullScreen = false;
 	});
