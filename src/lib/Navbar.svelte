@@ -1,7 +1,6 @@
 <script>
-	import { createEventDispatcher, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	const dispatch = createEventDispatcher();
 
 	let width;
 	let isFullScreen;
@@ -12,7 +11,7 @@
 		else isFullScreen = false;
 	});
 
-	$: isNavOpen = false;
+	let isNavOpen = false;
 
 	function toggleView() {
 		isNavOpen = !isNavOpen;
@@ -24,8 +23,6 @@
 		el.scrollIntoView({
 			behavior: 'smooth'
 		});
-
-		dispatch;
 	}
 </script>
 
