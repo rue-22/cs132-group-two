@@ -1,30 +1,29 @@
 <script>
-	import { onMount } from 'svelte';
 	import { Carousel, Thumbnails } from 'flowbite-svelte';
 
 	const images = [
 		{
-			src: 'corr_mat.png',
+			src: 'correlation_matrix.png',
 			title: '<strong>Res. Qn. 1</strong>: Crop price correlation matrix'
 		},
 		{
-			src: '18.png',
+			src: '21.png',
 			title: '<strong>Res. Qn. 2</strong>: Z-score for animal products'
 		},
 		{
-			src: '19.png',
+			src: '22.png',
 			title: '<strong>Res. Qn. 2</strong>: Z-score for seafood'
 		},
 		{
-			src: '20.png',
+			src: '23.png',
 			title: '<strong>Res. Qn. 2</strong>: Z-score for fruit, vegetables, roots'
 		},
 		{
-			src: '21.png',
+			src: '24.png',
 			title: '<strong>Res. Qn. 2</strong>: Z-score for grains and starches'
 		},
 		{
-			src: 'nutshell.png',
+			src: 'nutshell_plot.png',
 			title: 'Nutshell plot'
 		}
 	];
@@ -32,7 +31,6 @@
 	export let id;
 
 	let index = 0;
-	let image;
 	let forward = true;
 
 	let carousel;
@@ -51,9 +49,13 @@
 				bind:index
 				imgClass="aspect-video object-center block"
 				class="rounded-md w-full border-4 min-h-[480px] bg-gray-200 flex justify-center items-center"
-				on:change={({ detail }) => (image = detail)}
 			></Carousel>
-			<Thumbnails {images} {forward} bind:index imgClass="opacity-20" />
+			<Thumbnails
+				{images}
+				{forward}
+				bind:index
+				imgClass="opacity-80 flex border border-black"
+			/>
 			<div class="rounded h-10 bg-gray-300 p-2 my-2 text-center">
 				{@html images[index].title}
 			</div>

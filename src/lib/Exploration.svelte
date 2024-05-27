@@ -26,7 +26,20 @@
 			</CardImage>
 			<CardImage src="pearson.png">
 				<span slot="heading">Pearson Correlation</span>
-				<span slot="desc">test</span>
+				<span slot="desc"
+					>We used the Pearson Correlation test to find correlations between two different
+					agricultural products.</span
+				>
+			</CardImage>
+			<CardImage src="kruskal.png">
+				<span slot="heading">Hypothesis Testing Results</span>
+				<span slot="desc">
+					We chose key products to represent each category. These key products have
+					notable positive or negative correlation coefficients with Well-Milled Rice.
+					Using the Kruskal-Wallis Test for seasonality, we found out that <strong
+						>NONE
+					</strong>of the products are affected by seasonal trends.
+				</span>
 			</CardImage>
 		</div>
 	</div>
