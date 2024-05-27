@@ -1,5 +1,5 @@
 <script>
-	export let src;
+	export let src = '';
 </script>
 
 <!-- change max-w-sm to other dimensions-->
