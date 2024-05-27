@@ -7,7 +7,7 @@
 	import References from '$lib/References.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Exploration from '$lib/Exploration.svelte';
-	import Graphs from '$lib/Graphs.svelte';
+	import Plots from '$lib/Plots.svelte';
 </script>
 
 <div class="flex flex-col mt-12">
@@ -20,7 +20,9 @@
 
 	<Exploration id="exploration" />
 
-	<Graphs id="graphs" />
+	<Plots id="plots" />
+
+	<!-- <Plots id="plots" /> -->
 
 	<Team
 		id="team"
