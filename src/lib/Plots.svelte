@@ -53,7 +53,7 @@
 				class="rounded-md w-full border-4 min-h-[480px] bg-gray-200 flex justify-center items-center"
 				on:change={({ detail }) => (image = detail)}
 			></Carousel>
-			<Thumbnails {images} {forward} bind:index />
+			<Thumbnails {images} {forward} bind:index imgClass="opacity-20" />
 			<div class="rounded h-10 bg-gray-300 p-2 my-2 text-center">
 				{@html images[index].title}
 			</div>
