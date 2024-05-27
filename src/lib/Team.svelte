@@ -14,7 +14,7 @@
 				<img class="w-36 h-36 rounded-full" src={images[i]} alt="" />
 				<div class="font-medium text-black">
 					<div class="flex items-center justify-center">
-						<h2>{names[i]}</h2>
+						<h2 class="font-semibold">{names[i]}</h2>
 						<a href={github[i]} class="text-gray-500 hover:text-gray-900 ms-2">
 							<svg
 								class="w-6 h-6"
@@ -31,7 +31,7 @@
 							</svg>
 						</a>
 					</div>
-					<p class="text-sm text-gray-500 dark:text-gray-400">
+					<p class="text-sm text-gray-600">
 						{desc[i]}
 					</p>
 				</div>
