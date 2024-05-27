@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { Carousel, Indicator } from 'flowbite-svelte';
+	import { Carousel, Thumbnails } from 'flowbite-svelte';
 
 	const images = [
 		{
@@ -33,6 +33,7 @@
 
 	let index = 0;
 	let image;
+	let forward = true;
 
 	let carousel;
 </script>
@@ -43,20 +44,18 @@
 >
 	<div class="flex flex-col w-full m-auto">
 		<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Plots</h1>
-		<div class="border border-black w-full flex flex-col m-auto">
+		<div class="w-full flex flex-col m-auto">
 			<Carousel
 				{images}
+				{forward}
+				bind:index
 				imgClass="aspect-video object-center block"
-				let:Indicators
-				let:Controls
-				class="rounded-md w-full border-4 min-h-[720px] bg-gray-200 flex justify-center items-center"
+				class="rounded-md w-full border-4 min-h-[480px] bg-gray-200 flex justify-center items-center"
 				on:change={({ detail }) => (image = detail)}
-			>
-				<Controls />
-				<Indicators />
-			</Carousel>
+			></Carousel>
+			<Thumbnails {images} {forward} bind:index imgClass="opacity-20" />
 			<div class="rounded h-10 bg-gray-300 p-2 my-2 text-center">
-				{@html image?.title}
+				{@html images[index].title}
 			</div>
 		</div>
 	</div>
