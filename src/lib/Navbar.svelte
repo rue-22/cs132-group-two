@@ -83,6 +83,22 @@
 					</li>
 					<li>
 						<a
+							href="#exploration"
+							on:click|preventDefault={scrollIntoView}
+							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
+							>Exploration</a
+						>
+					</li>
+					<li>
+						<a
+							href="#graphs"
+							on:click|preventDefault={scrollIntoView}
+							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
+							>Graphs</a
+						>
+					</li>
+					<li>
+						<a
 							href="#team"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
