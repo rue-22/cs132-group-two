@@ -26,7 +26,7 @@
 	}
 </script>
 
-<nav class="fixed top-0 w-full border-gray-200 bg-gray-50 border-b shadow-md">
+<nav class="fixed top-0 z-10 w-full border-gray-200 bg-gray-50 border-b shadow-md">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="self-center text-2xl font-semibold whitespace-nowrap">Group Two</span>
@@ -91,10 +91,10 @@
 					</li>
 					<li>
 						<a
-							href="#graphs"
+							href="#plots"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
-							>Graphs</a
+							>Plots</a
 						>
 					</li>
 					<li>
