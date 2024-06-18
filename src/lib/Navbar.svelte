@@ -1,18 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import { Progressbar } from 'flowbite-svelte';
 
 	let width;
 	let isFullScreen;
 
-	// onMount(() => {
-	// 	width = window.innerWidth;
-	// 	if (width > 768) isFullScreen = true;
-	// 	else isFullScreen = false;
-	// });
 	onMount(() => {
 		const updateIsFullScreen = () => {
-			const width = window.innerWidth;
+			width = window.innerWidth;
 			if (width > 768) isFullScreen = true;
 			else isFullScreen = false;
 		};

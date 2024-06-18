@@ -12,7 +12,7 @@
 	import Discussion from '$lib/Discussion.svelte';
 </script>
 
-<div class="flex flex-col mt-12">
+<div class="flex flex-col mt-12 bg-bwhite">
 	<Navbar />
 	<Intro />
 
@@ -32,7 +32,7 @@
 		id="team"
 		names={['Gaza, Judelle', 'Roy, RE', 'Salces, CJ']}
 		desc={['2nd year CS student', '2nd year CS student', '2nd year CS student']}
-		images={['placeholder.png', 'placeholder.png', 'placeholder.png']}
+		images={['1.png', '2.png', '3.jpg']}
 		github={[
 			'https://github.com/ElleDiablo',
 			'https://github.com/reofficial',
