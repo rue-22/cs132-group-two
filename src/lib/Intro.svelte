@@ -1,18 +1,44 @@
+<script>
+	import { onMount } from 'svelte';
+
+	let isFullScreen;
+
+	onMount(() => {
+		const updateIsFullScreen = () => {
+			const width = window.innerWidth;
+			if (width > 768) isFullScreen = true;
+			else isFullScreen = false;
+		};
+
+		updateIsFullScreen();
+
+		window.addEventListener('resize', updateIsFullScreen);
+
+		return () => {
+			window.removeEventListener('resize', updateIsFullScreen);
+		};
+	});
+</script>
+
 <section
 	class="bg-center bg-no-repeat bg-[url('./static/../hero.png')] bg-gray-700 bg-blend-multiply"
 >
 	<div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
 		<h1
-			class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+			class="mb-4 font-msans text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
 		>
 			Rising Rice Prices?
 		</h1>
 		<h2
-			class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl"
+			class="mb-4 font-msans text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl"
 		>
-			A Longitudinal Study into the Interplay of Agricultural Goods
+			{#if isFullScreen}
+				A Longitudinal Study into the <br /> Interplay of Agricultural Goods
+			{:else}
+				A Longitudinal Study into the Interplay of Agricultural Goods
+			{/if}
 		</h2>
-		<p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+		<p class="mb-8 font-m text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
 			Despite the promises and reforms of the government aimed to lower costs of goods, the
 			Filipino people still have not experienced relief from the continuous price hikes of
 			goods. Thus, there have been movements in the government to review this law. However, a

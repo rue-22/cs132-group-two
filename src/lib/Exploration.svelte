@@ -4,35 +4,41 @@
 </script>
 
 <div
-	class="border-black border-b-2 p-4 text-center flex flex-col gap-4 justify-center items-center"
+	class="border-black border-b-2 p-4 text-center flex flex-col gap-4 justify-center items-center md:py-10"
 	{id}
 >
-	<div class="flex flex-col">
-		<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Data Exploration</h1>
-		<div class="flex flex-col gap-2 md:flex-row">
-			<CardImage src="mean.png">
+	<h1 class="font-msans text-center text-2xl md:text-5xl font-bold md:mb-4">Data Exploration</h1>
+	<div class="flex flex-col gap-8">
+		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
+			<CardImage src="preprocess.png">
 				<span slot="heading">Preprocessing</span>
 				<span slot="desc"
 					>We computed the average of the Philippines as a whole, removing the null values
 					that some regions had on certain products.</span
 				>
 			</CardImage>
-			<CardImage src="matplotlib.png">
+			<CardImage src="visual.png">
 				<span slot="heading">Visualization</span>
 				<span slot="desc"
 					>We used <strong>Matplotlib</strong> and <strong>Seaborn</strong> to generate graphs
 					that showcase relationship within the data.</span
 				>
 			</CardImage>
+		</div>
+		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
 			<CardImage src="pearson.png">
-				<span slot="heading">Pearson Correlation</span>
+				<span slot="heading">Correlation Test</span>
 				<span slot="desc"
-					>We used the Pearson Correlation test to find correlations between two different
-					agricultural products.</span
+					>We used the <strong
+						><a
+							href="https://www.scribbr.com/statistics/pearson-correlation-coefficient/"
+							target="__blank__">Pearson Correlation test</a
+						></strong
+					> to find correlations between two different agricultural products.</span
 				>
 			</CardImage>
 			<CardImage src="kruskal.png">
-				<span slot="heading">Hypothesis Testing Results</span>
+				<span slot="heading">Hypothesis Testing</span>
 				<span slot="desc">
 					We chose key products to represent each category. These key products have
 					notable positive or negative correlation coefficients with Well-Milled Rice.
@@ -43,8 +49,10 @@
 			</CardImage>
 		</div>
 	</div>
-	<div class="flex flex-col md:flex-row gap-2">
-		<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+	<div class="flex flex-col md:flex-row gap-6">
+		<div
+			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+		>
 			<div>
 				<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
 					Want to access our spreadsheet?
@@ -76,7 +84,9 @@
 				</svg>
 			</a>
 		</div>
-		<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+		<div
+			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+		>
 			<div>
 				<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
 					Curious to check our Jupyter Notebook?
@@ -90,7 +100,7 @@
 				class="inline-flex font-medium items-center text-blue-600 hover:underline"
 				target="__blank__"
 			>
-				Link to our Jupyter Notebook!
+				Our Jupyter Notebook!
 				<svg
 					class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
 					aria-hidden="true"
