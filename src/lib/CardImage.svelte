@@ -4,7 +4,7 @@
 
 <!-- change max-w-sm to other dimensions-->
 <div
-	class="max-w-md bg-white border border-gray-400 rounded-lg shadow transform transition duration-300 hover:scale-105"
+	class="max-w-md bg-white border border-gray-600 rounded-lg shadow transform transition duration-300 hover:scale-105"
 >
 	{#if src}
 		<div class="border-b-2 bg-cover bg-center h-fit flex justify-center items-center">
