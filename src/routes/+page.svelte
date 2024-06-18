@@ -8,6 +8,8 @@
 	import Footer from '$lib/Footer.svelte';
 	import Exploration from '$lib/Exploration.svelte';
 	import Plots from '$lib/Plots.svelte';
+	import Conclusion from '$lib/Conclusion.svelte';
+	import Discussion from '$lib/Discussion.svelte';
 </script>
 
 <div class="flex flex-col mt-12">
@@ -22,7 +24,9 @@
 
 	<Plots id="plots" />
 
-	<!-- <Plots id="plots" /> -->
+	<Discussion id="disc" />
+
+	<Conclusion id="conclusion" />
 
 	<Team
 		id="team"
@@ -36,6 +40,6 @@
 		]}
 	/>
 
-	<References />
+	<References id="ref" />
 	<Footer />
 </div>

@@ -37,11 +37,12 @@
 </script>
 
 <div
-	class="border-black border-b-2 p-4 text-center flex flex-col gap-4 justify-center items-center"
+	class="border-black border-b-2 p-4 text-center flex flex-col gap-4 justify-center items-center md:py-10"
 	{id}
 >
+	<h1 class="text-center text-2xl md:text-5xl font-bold md:mb-4 font-msans">Plots</h1>
+
 	<div class="flex flex-col w-full m-auto">
-		<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Plots</h1>
 		<div class="w-full flex flex-col m-auto">
 			<Carousel
 				{images}

@@ -5,10 +5,25 @@
 	let width;
 	let isFullScreen;
 
+	// onMount(() => {
+	// 	width = window.innerWidth;
+	// 	if (width > 768) isFullScreen = true;
+	// 	else isFullScreen = false;
+	// });
 	onMount(() => {
-		width = window.innerWidth;
-		if (width > 768) isFullScreen = true;
-		else isFullScreen = false;
+		const updateIsFullScreen = () => {
+			const width = window.innerWidth;
+			if (width > 768) isFullScreen = true;
+			else isFullScreen = false;
+		};
+
+		updateIsFullScreen();
+
+		window.addEventListener('resize', updateIsFullScreen);
+
+		return () => {
+			window.removeEventListener('resize', updateIsFullScreen);
+		};
 	});
 
 	let isNavOpen = false;
@@ -26,7 +41,7 @@
 	}
 </script>
 
-<nav class="fixed top-0 z-10 w-full border-gray-200 bg-gray-50 border-b shadow-md">
+<nav class="font-msans fixed top-0 z-10 w-full border-gray-200 bg-gray-50 border-b shadow-md">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="self-center text-2xl font-semibold whitespace-nowrap">Group Two</span>
@@ -99,10 +114,34 @@
 					</li>
 					<li>
 						<a
+							href="#disc"
+							on:click|preventDefault={scrollIntoView}
+							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
+							>Discussion</a
+						>
+					</li>
+					<li>
+						<a
+							href="#conclusion"
+							on:click|preventDefault={scrollIntoView}
+							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
+							>Conclusion</a
+						>
+					</li>
+					<li>
+						<a
 							href="#team"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
 							>Team</a
+						>
+					</li>
+					<li>
+						<a
+							href="#ref"
+							on:click|preventDefault={scrollIntoView}
+							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
+							>References</a
 						>
 					</li>
 				</ul>

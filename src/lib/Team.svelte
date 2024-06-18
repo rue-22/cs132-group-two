@@ -6,8 +6,9 @@
 	export let images;
 </script>
 
-<div class="border-b-2 border-black py-2" {id}>
-	<h1 class="text-center text-2xl md:text-3xl font-bold mb-4">Meet the Team!</h1>
+<div class="border-b-2 border-black p-4 gap-4 md:py-10" {id}>
+	<h1 class="font-msans text-center text-2xl md:text-5xl font-bold md:mb-4">Meet the Team</h1>
+
 	<div class="flex flex-col md:flex-row text-center justify-around items-center gap-8">
 		{#each names as _, i}
 			<div class="flex flex-col md:flex-row items-center gap-4">
