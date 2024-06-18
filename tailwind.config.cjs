@@ -7,6 +7,10 @@ module.exports = {
 				msans: ['"Merriweather Sans"', 'sans-serif'],
 				m: ['"Merriweather"', 'sans-serif'],
 				rale: ['"Raleway"', 'sans-serif']
+			},
+			colors: {
+				bwhite: '#efefef',
+				offwhite: '#f3f4f6'
 			}
 		}
 	},
