@@ -25,7 +25,7 @@
 				<span slot="heading">Optimize Production</span>
 				<span slot="desc"
 					>Diversifying the production of agricultural goods can protect our farmers from
-					price movements that affect
+					price movements that affect their possible profits.
 				</span>
 			</CardImage>
 		</div>
