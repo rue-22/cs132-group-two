@@ -9,14 +9,14 @@
 	<h1 class="font-msans text-center text-3xl md:text-5xl font-bold md:mb-4">Conclusion</h1>
 
 	<div class="max-w-screen-lg">
-		<h2 class="mb-2 md:mb-4 font-msans text-center text-xl md:text-4xl font-bold">
+		<h2 class="mb-2 md:mb-4 font-msans text-center text-xl md:text-3xl font-bold">
 			Some Recommendations
 		</h2>
 		<p class="text-center font-m text-normal md:text-xl">
 			Due to the sheer number of agricultural products and the amount of possible pairings, we
 			were unable to investigate all of them. Hence, we recommend taking the time to perform
-			correlation studies between <strong>all possible pairs</strong> as well as using data
-			that spans a <strong>longer period</strong>.
+			correlation studies between <strong>all possible product pairs</strong> as well as using
+			data that spans for a <strong>longer period</strong>.
 		</p>
 	</div>
 </div>
