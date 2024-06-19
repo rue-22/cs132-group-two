@@ -52,7 +52,9 @@
 				<span slot="heading">Hypothesis Testing</span>
 				<span slot="desc">
 					We compared key products that represent each category from one another. Using
-					the Kruskal-Wallis Test for seasonality, we found out that <strong>NONE</strong>
+					the Kruskal-Wallis Test for seasonality, we found out that only <strong
+						>some</strong
+					>
 					of the products are affected by seasonal trends.
 				</span>
 			</CardImage>
