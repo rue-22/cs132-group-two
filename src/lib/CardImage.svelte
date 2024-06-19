@@ -13,11 +13,11 @@
 	{/if}
 	<div class="p-5">
 		<div>
-			<h5 class="font-rale mb-2 text-3xl font-bold tracking-tight text-gray-900">
+			<h5 class="font-rale mb-2 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">
 				<slot name="heading" />
 			</h5>
 		</div>
-		<p class="font-m mb-3 font-normal text-gray-700">
+		<p class="font-m mb-3 font-normal md:text-lg text-gray-700">
 			<slot name="desc" />
 		</p>
 	</div>

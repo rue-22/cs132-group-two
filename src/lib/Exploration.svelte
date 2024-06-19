@@ -7,7 +7,7 @@
 	class="border-black border-b-2 p-4 text-center flex flex-col gap-4 justify-center items-center md:py-10"
 	{id}
 >
-	<h1 class="font-msans text-center text-2xl md:text-5xl font-bold md:mb-4">Data Exploration</h1>
+	<h1 class="font-msans text-center text-3xl md:text-5xl font-bold md:mb-4">Data Exploration</h1>
 	<div class="flex flex-col gap-8">
 		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
 			<CardImage src="preprocess.png">
@@ -20,8 +20,16 @@
 			<CardImage src="visual.png">
 				<span slot="heading">Visualization</span>
 				<span slot="desc"
-					>We used <strong>Matplotlib</strong> and <strong>Seaborn</strong> to generate graphs
-					that showcase relationship within the data.</span
+					>We used <strong
+						><i><a href="https://matplotlib.org/" target="__blank__">Matplotlib</a></i
+						></strong
+					>
+					and
+					<strong
+						><i><a href="https://seaborn.pydata.org/" target="__blank__">Seaborn</a></i
+						></strong
+					>
+					to generate the graphs that showcased relationships within the data.</span
 				>
 			</CardImage>
 		</div>
@@ -30,28 +38,29 @@
 				<span slot="heading">Correlation Test</span>
 				<span slot="desc"
 					>We used the <strong
-						><a
-							href="https://www.scribbr.com/statistics/pearson-correlation-coefficient/"
-							target="__blank__">Pearson Correlation test</a
+						><i
+							><a
+								href="https://www.scribbr.com/statistics/pearson-correlation-coefficient/"
+								target="__blank__">Pearson Correlation test</a
+							></i
 						></strong
-					> to find correlations between two different agricultural products.</span
+					> to find correlations between two different agricultural products. We then used
+					a correlation matrix to visualize correlations of multiple products.</span
 				>
 			</CardImage>
 			<CardImage src="kruskal.png">
 				<span slot="heading">Hypothesis Testing</span>
 				<span slot="desc">
-					We chose key products to represent each category. These key products have
-					notable positive or negative correlation coefficients with Well-Milled Rice.
-					Using the Kruskal-Wallis Test for seasonality, we found out that <strong
-						>NONE
-					</strong>of the products are affected by seasonal trends.
+					We compared key products that represent each category from one another. Using
+					the Kruskal-Wallis Test for seasonality, we found out that <strong>NONE</strong>
+					of the products are affected by seasonal trends.
 				</span>
 			</CardImage>
 		</div>
 	</div>
 	<div class="flex flex-col md:flex-row gap-6">
 		<div
-			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-300 rounded-lg shadow"
 		>
 			<div>
 				<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
@@ -85,7 +94,7 @@
 			</a>
 		</div>
 		<div
-			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+			class="hover:scale-105 transition translate duration-300 max-w-sm p-6 bg-white border border-gray-300 rounded-lg shadow"
 		>
 			<div>
 				<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
