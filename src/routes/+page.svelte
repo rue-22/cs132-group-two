@@ -22,7 +22,7 @@
 
 	<Exploration id="exploration" />
 
-	<Plots id="plots" />
+	<Plots id="results" />
 
 	<Discussion id="disc" />
 
@@ -40,6 +40,6 @@
 		]}
 	/>
 
-	<References id="ref" />
+	<!-- <References id="ref" /> -->
 	<Footer />
 </div>

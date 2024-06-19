@@ -89,7 +89,7 @@
 							href="#data"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
-							>Data</a
+							>Collection</a
 						>
 					</li>
 					<li>
@@ -102,10 +102,10 @@
 					</li>
 					<li>
 						<a
-							href="#plots"
+							href="#results"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
-							>Plots</a
+							>Results</a
 						>
 					</li>
 					<li>
@@ -132,14 +132,14 @@
 							>Team</a
 						>
 					</li>
-					<li>
+					<!-- <li>
 						<a
 							href="#ref"
 							on:click|preventDefault={scrollIntoView}
 							class="border-b-2 block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700"
 							>References</a
 						>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		{/if}

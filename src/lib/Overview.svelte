@@ -7,7 +7,7 @@
 	class="border-b-2 border-t-2 border-black flex flex-col justify-center p-4 gap-4 items-center md:py-10"
 	{id}
 >
-	<h1 class="font-msans text-center text-2xl md:text-5xl font-bold md:mb-4">Overview</h1>
+	<h1 class="font-msans text-center text-3xl md:text-5xl font-bold md:mb-4">Overview</h1>
 	<div class="flex flex-col justify-center items-center gap-4 md:gap-8">
 		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
 			<CardImage src="problem.png">
@@ -15,7 +15,7 @@
 				<p slot="desc">
 					Despite being an agricultural country, there is a <span class="font-">lack</span
 					>
-					of research regarding price changes for agricultural products. In recent years, prices
+					of research regarding price behavior of agricultural products. In recent years, prices
 					of goods have been
 					<strong>continuously rising</strong>, warranting an investigation behind the
 					possible factors that affect it.
@@ -69,11 +69,20 @@
 			</CardImage>
 		</div>
 
-		<CardImage>
+		<CardImage src="py.png">
 			<h1 slot="heading">Action Plan</h1>
 			<p slot="desc">
-				We applied statistical tests such as <strong>SARIMA</strong> to analyze seasonal price
-				trends and correlations between the prices of different products.
+				We used <strong
+					><i><a href="https://www.python.org/" target="__blank__">Python</a></i></strong
+				>
+				and libraries like
+				<strong
+					><i><a target="__blank__" href="https://pandas.pydata.org/">pandas</a></i
+					></strong
+				>
+				in order to help us extract information about our dataset. We also applied statistical
+				methods such as correlation tests to analyze seasonal price trends and correlations between
+				the prices of different products.
 			</p>
 		</CardImage>
 	</div>
