@@ -11,8 +11,8 @@
 
 	<div class="flex flex-col justify-center items-center gap-4 mb-2">
 		<p class=" text-center font-m text-normal md:text-xl">
-			In conclusion, we <strong>reject</strong> the null hypothesis. Some of the main takeaways
-			of our study include the following
+			In conclusion, we <strong>reject</strong> the null hypothesis. Some of the <br /> main takeaways
+			of our study include the following:
 		</p>
 		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
 			<CardImage>
@@ -28,7 +28,7 @@
 			<CardImage>
 				<span slot="heading">Holiday Seasons</span>
 				<span slot="desc"
-					>We have verified that ber-months or the holiday seasons are time periods
+					>We have verified that ber months or the holiday seasons are time periods
 					wherein <strong>prices peak</strong> for numerous products.</span
 				>
 			</CardImage>
