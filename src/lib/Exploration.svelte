@@ -48,14 +48,13 @@
 					a correlation matrix to visualize correlations of multiple products.</span
 				>
 			</CardImage>
-			<CardImage src="kruskal.png">
-				<span slot="heading">Hypothesis Testing</span>
+			<CardImage src="zscore1.png">
+				<span slot="heading">Seasonality Testing</span>
 				<span slot="desc">
-					We compared key products that represent each category from one another. Using
-					the Kruskal-Wallis Test for seasonality, we found out that only <strong
-						>some</strong
-					>
-					of the products are affected by seasonal trends.
+					For each crop, we aggregated mean prices and calculated the z-score of their
+					respective prices. We then performed <strong>cubic spline interpolation</strong>
+					for better visualization. We made four <strong>line graphs</strong> to visualize
+					seasonality.
 				</span>
 			</CardImage>
 		</div>
