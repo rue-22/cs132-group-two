@@ -62,7 +62,7 @@
 		</div>
 	</div>
 
-	<div class="md:flex md:flex-row md:justify-between md:items-center md:gap-12">
+	<div class="md:flex md:flex-row md:justify-between md:items-center md:gap-12 md:mt-8">
 		<div class="flex flex-col gap-2 md:gap-6 items-center">
 			<h2 class="text-center font-msans font-bold text-xl md:text-3xl mt-2">
 				Top Products with <i>Positive</i> Correlation
@@ -121,38 +121,41 @@
 		</div>
 	</div>
 
-	<h2 class="text-center font-msans font-bold text-xl md:text-3xl mt-2">
-		Seasonality of Products
-	</h2>
-	<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
-		<CardImage src="animal.jpg">
-			<span slot="heading">Animal products</span>
-			<span slot="desc"
-				><strong>Spikes</strong> in ber months and <strong>dips</strong> in the following months.</span
-			>
-		</CardImage>
-		<CardImage src="seafood.png">
-			<span slot="heading">Seafood</span>
-			<span slot="desc">
-				<strong>Does not</strong> experience drastic changes in prices, but
-				<strong>shrimp</strong>
-				gets quite <strong>cheap</strong> during the ber months.
-			</span>
-		</CardImage>
-	</div>
-	<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
-		<CardImage src="fruits_veg.jpg">
-			<span slot="heading">Fruits, Vegetables, and Roots</span>
-			<span slot="desc">
-				<strong>Does not</strong> follow some sort of general seasonality.
-			</span>
-		</CardImage>
-		<CardImage src="rice_grains.jpg">
-			<span slot="heading">Rice, Grains, and Starches</span>
-			<span slot="desc">
-				<strong>Gradually increase</strong> in price from August up to December.
-			</span>
-		</CardImage>
+	<div class="flex mt-2 md:mt-8 flex-col gap-2 md:gap-6">
+		<h2 class="text-center font-msans font-bold text-xl md:text-3xl">
+			Seasonality of Products
+		</h2>
+		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
+			<CardImage src="animal.jpg">
+				<span slot="heading">Animal products</span>
+				<span slot="desc"
+					><strong>Spikes</strong> in ber months and <strong>dips</strong> in the following
+					months.</span
+				>
+			</CardImage>
+			<CardImage src="seafood.png">
+				<span slot="heading">Seafood</span>
+				<span slot="desc">
+					<strong>Does not</strong> experience drastic changes in prices, but
+					<strong>shrimp</strong>
+					gets quite <strong>cheap</strong> during the ber months.
+				</span>
+			</CardImage>
+		</div>
+		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
+			<CardImage src="fruits_veg.jpg">
+				<span slot="heading">Fruits, Vegetables, and Roots</span>
+				<span slot="desc">
+					<strong>Does not</strong> follow some sort of general seasonality.
+				</span>
+			</CardImage>
+			<CardImage src="rice_grains.jpg">
+				<span slot="heading">Rice, Grains, and Starches</span>
+				<span slot="desc">
+					<strong>Gradually increase</strong> in price from August up to December.
+				</span>
+			</CardImage>
+		</div>
 	</div>
 </div>
 

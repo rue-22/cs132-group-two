@@ -35,11 +35,6 @@
 		<h2 class="text-center font-msans font-bold text-xl md:text-3xl">
 			Seasonality of Products
 		</h2>
-		<p class="text-center font-m text-normal md:text-xl">
-			Understanding the seasonality of a product helps us, the consumers, to <strong
-				>prepare and plan</strong
-			> the distribution of budgets.
-		</p>
 		<div class="flex justify-around flex-col md:flex-row gap-2 md:gap-8">
 			<CardImage src="ber.jpg">
 				<span slot="heading">Ber months</span>
@@ -79,7 +74,8 @@
 				<span slot="heading">Help Consumers</span>
 				<span slot="desc"
 					>We can carefully <strong>predict and plan</strong> our purchases and potentially
-					save money, especially in this time where product prices are extremely high.</span
+					save money, especially in this time where prices of products and services are extremely
+					high.</span
 				>
 			</CardImage>
 		</div>
