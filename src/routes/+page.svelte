@@ -31,7 +31,11 @@
 	<Team
 		id="team"
 		names={['Gaza, Judelle', 'Roy, RE', 'Salces, CJ']}
-		desc={['2nd year CS student', '2nd year CS student', '2nd year CS student']}
+		desc={[
+			'2nd year UP Diliman CS student',
+			'2nd year UP Diliman CS student',
+			'2nd year UP Diliman CS student'
+		]}
 		images={['1.png', '2.png', '3.jpg']}
 		github={[
 			'https://github.com/ElleDiablo',
